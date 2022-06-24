@@ -1,52 +1,55 @@
 {
   "packageDirectories": [
     {
-      "path": "force-app",
+      "package": "src-env-specific-pre",
+      "versionNumber": "1.0.0.0",
+      "ignoreOnStage": ["prepare", "validate", "quickbuild", "build"]
+    },
+    {
+      "path": "./src-env-specific-alias-pre",
+      "package": "src-env-specific-alias-pre",
+      "versionNumber": "1.0.0.0",
+      "aliasfy": true,
+      "ignoreOnStage": ["prepare", "validate", "quickbuild", "build"]
+    },
+    {
+      "path": "./src/core-crm",
+      "package": "core",
+      "versionName": "Version 1.0.0",
+      "versionNumber": "1.0.0.0"
+    },
+    {
+      "path": "./src-ui",
+      "package": "src-ui",
+      "versionNumber": "1.1.0.0",
+      "ignoreOnStage": ["prepare", "validate", "quickbuild", "build"]
+    },
+    {
+      "path": "./src-access-management",
+      "package": "src-access-management",
+      "versionNumber": "1.0.0.0",
+      "ignoreOnStage": ["prepare", "validate", "quickbuild", "build"]
+    },
+    {
+      "path": "./src-env-specific-alias-post",
+      "package": "src-env-specific-alias-post",
+      "versionNumber": "1.0.0.0",
+      "aliasfy": true,
+      "alwaysDeploy": true,
+      "ignoreOnStage": ["prepare", "validate", "quickbuild", "build"]
+    },
+    {
+      "path": "./src-temp",
+      "package": "src-temp",
+      "versionName": "Version 1.0.0",
+      "versionNumber": "1.0.0.0",
       "default": true,
-      "dependencies": [
-        {
-          "package": "lm_alerts@1.0.0.2"
-        },
-        {
-          "package": "OIQ@1.0.0.1"
-        },
-        {
-          "package": "maps@238.13.0.1"
-        },
-        {
-          "package": "bmpyrckt@1.10.0.1"
-        },
-        {
-          "package": "sf_flowmodal@1.14.0.1"
-        },
-        {
-          "package": "FlowActionsBasePack@3.0.0.0"
-        },
-        {
-          "package": "FlowScreenComponentsBasePack@3.0.6.0"
-        },
-        {
-          "package": "datatable@4.0.5-0"
-        }
-      ],
-      "package": "datatable",
-      "versionName": "Datatable v4",
-      "versionNumber": "0.1.0.NEXT"
+      "ignoreOnStage": ["prepare", "validate", "quickbuild", "build"]
     }
   ],
-  "name": "rstahl",
   "namespace": "",
   "sfdcLoginUrl": "https://login.salesforce.com",
-  "sourceApiVersion": "54.0",
-  "packageAliases": {
-    "datatable": "0Ho5G000000XZNaSAO",
-    "lm_alerts@1.0.0.2": "04t4S000000HweFQAS",
-    "OIQ@1.0.0.1": "04t58000000SGw3AAG",
-    "maps@238.13.0.1": "04t4P000002GIfrQAG",
-    "bmpyrckt@1.10.0.1": "04t2w000009BbjoAAC",
-    "sf_flowmodal@1.14.0.1": "04t2E000003VsuMQAS",
-    "FlowActionsBasePack@3.0.0.0": "04t4W000002vyJIQAY",
-    "FlowScreenComponentsBasePack@3.0.6.0": "04t4W000002vyJIQAY",
-    "datatable@4.0.5-0": "04t8b000001Eh4YAAS"
-  }
+  "sourceApiVersion": "52.0",
+  "packageAliases": {},
+  "plugins": {}
 }
