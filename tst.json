@@ -1,0 +1,28 @@
+{
+  "packageDirectories": [
+    {
+      "path": "force-app",
+      "default": true,
+      "dependencies": [
+        {
+          "package": "FlowActionsBasePack@3.0.0.0"
+        },
+        {
+          "package": "FlowScreenComponentsBasePack@3.0.6.0"
+        },
+        {
+          "package": "datatable@4.0.5-0"
+        }
+      ]
+    }
+  ],
+  "name": "rstahl",
+  "namespace": "",
+  "sfdcLoginUrl": "https://login.salesforce.com",
+  "sourceApiVersion": "54.0",
+  "plugins": {
+    "sfdx-plugin-prettier": {
+      "enabled": false
+    }
+  }
+}
