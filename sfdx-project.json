@@ -5,26 +5,24 @@
       "default": true,
       "dependencies": [
         {
-          "package": "FlowActionsBasePack@3.0.0-0"
+          "package": "FlowActionsBasePack@3.0.0.0"
         },
-
         {
-          "package": "FlowScreenComponentsBasePack@3.0.7-0"
+          "package": "FlowScreenComponentsBasePack@3.0.6.0"
+        },
+        {
+          "package": "datatable@4.0.5-0"
         }
-      ],
-      "package": "datatable",
-      "versionName": "Datatable v4",
-      "versionDescription": "Datatable Flow Screen Component by Eric Smith",
-      "versionNumber": "0.1.0.NEXT"
+      ]
     }
   ],
-  "name": "Festo",
+  "name": "rstahl",
   "namespace": "",
   "sfdcLoginUrl": "https://login.salesforce.com",
   "sourceApiVersion": "54.0",
-  "packageAliases": {
-    "FlowActionsBasePack@2.36.0-0": "04t4W00000309GAQAY",
-    "FlowScreenComponentsBasePack@3.0.7-0": "04t5G000003rUyAQAU",
-    "datatable@4.0.5-0": "04t5G000003rUyKQAU"
+  "plugins": {
+    "sfdx-plugin-prettier": {
+      "enabled": false
+    }
   }
 }
