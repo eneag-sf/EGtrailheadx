@@ -1,7 +1,6 @@
 {
   "$schema": "https://raw.githubusercontent.com/Accenture/sfpowerscripts/develop/packages/sfpowerscripts-cli/resources/schemas/pooldefinition.schema.json",
   "tag": "ci",
-  "script_file_path": "scripts/installPackages.sh",
   "maxAllocation": 3,
   "expiry": 2,
   "batchSize": 3,
