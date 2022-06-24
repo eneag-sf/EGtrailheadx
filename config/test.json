@@ -4,7 +4,6 @@
     "config_file_path": "config/project-scratch-def.json",
     "script_file_path": "scripts/installPackages.sh",
     "tag": "ci",
-    "relax_all_ip_ranges": true,
     "max_allocation": 3
   }
 }
