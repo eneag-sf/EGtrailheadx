@@ -18,7 +18,7 @@ on:
       gitRef:
         description: "Commit Id from where the pools should be created"
         required: false
-        default: "main"
+        default: "master"
   schedule:
     - cron: "0 14 * * *"
 
