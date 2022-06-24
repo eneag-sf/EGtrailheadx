@@ -1,7 +1,7 @@
 #!/bin/bash
 #echo y | sfdx force:package:install --package 04t8b000001Eh4YAAS -w 10
 #install FlowActionsBasePack package (Version 3.0.0 Managed)
-https://unofficialsf.com/flow-action-and-screen-component-basepacks/
+#https://unofficialsf.com/flow-action-and-screen-component-basepacks/
 sfdx force:package:install --package 04t8b000001Eh4YAAS -w 10
 
 
