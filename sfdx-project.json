@@ -17,7 +17,12 @@
       "path": "./src/core-crm",
       "package": "core",
       "versionName": "Version 1.0.0",
-      "versionNumber": "1.0.0.0"
+      "versionNumber": "1.0.0.0",
+      "dependencies": [
+        {
+          "package": "04t2w000009BbjoAAC"
+        }
+      ]
     },
     {
       "path": "./src-ui",
