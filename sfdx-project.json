@@ -46,7 +46,7 @@
       ]
     },
     {
-      "path": "./src/up-code",
+      "path": "./up-code",
       "package": "upCode",
       "versionNumber": "1.0.0.0",
       "dependencies": [
@@ -57,7 +57,7 @@
       ]
     },
     {
-      "path": "./src/up-code",
+      "path": "./up-styles",
       "package": "upStylesLWC",
       "versionNumber": "1.0.0.0",
       "dependencies": [
