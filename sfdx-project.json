@@ -59,17 +59,6 @@
       ]
     },
     {
-      "path": "./up-styles",
-      "package": "upStylesLWC",
-      "versionNumber": "1.0.0.0",
-      "dependencies": [
-        {
-          "package": "upCode",
-          "versionNumber": "1.0.0.LATEST"
-        }
-      ]
-    },
-    {
       "path": "./src-access-management",
       "package": "src-access-management",
       "versionNumber": "1.0.0.0",
@@ -89,8 +78,7 @@
   "sourceApiVersion": "54.0",
   "packageAliases": {
     "upSales": "0Ho5f000000TNGfCAO",
-    "upCode": "0Ho5f000000TNGkCAO",
-    "upStylesLWC": "0Ho5f000000TNGpCAO"
+    "upCode": "0Ho5f000000TNGkCAO"
   },
   "plugins": {}
 }
