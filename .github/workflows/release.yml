@@ -60,7 +60,7 @@ jobs:
 
       - name: Authenticate to PROD
         run: |
-          echo "${{ secrets.DEVHUB_SFDX_AUTH_URL }}" > ./authfile
+          echo "${{ secrets.PROD_SFDX_AUTH_URL }}" > ./authfile
           sfdx auth:sfdxurl:store -f ./authfile -a prod
 
       # Authenticate to npm
