@@ -1,5 +1,5 @@
 {
-  "orgName": "Festo Scratch Org",
+  "orgName": "Developer Scratch Org",
   "edition": "Developer",
   "hasSampleData": true,
   "features": ["EnableSetPasswordInApi"],

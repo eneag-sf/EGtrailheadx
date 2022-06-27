@@ -1,5 +1,4 @@
 {
-  "$schema": "https://raw.githubusercontent.com/Accenture/sfpowerscripts/develop/packages/sfpowerscripts-cli/resources/schemas/pooldefinition.schema.json",
   "tag": "dev",
   "maxAllocation": 5,
   "expiry": 5,
