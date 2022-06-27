@@ -48,11 +48,22 @@
     {
       "path": "./src/up-code",
       "package": "upCode",
-      "versionName": "Service Cloud - 1.0.0",
       "versionNumber": "1.0.0.0",
       "dependencies": [
         {
           "package": "upSales",
+          "versionNumber": "1.0.0.LATEST"
+        }
+      ]
+    },
+    ,
+    {
+      "path": "./src/up-code",
+      "package": "upStylesLWC",
+      "versionNumber": "1.0.0.0",
+      "dependencies": [
+        {
+          "package": "upCode",
           "versionNumber": "1.0.0.LATEST"
         }
       ]
