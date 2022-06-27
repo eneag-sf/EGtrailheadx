@@ -1,0 +1,24 @@
+{
+  // Create Developer Scratch Org
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Create new Scratch Org",
+      "type": "shell",
+      "command": "./scripts/devScratchOrg.sh ${input:UserInitials}-${input:TicketNumber} ",
+      "problemMatcher": []
+    }
+  ],
+  "inputs": [
+    {
+      "id": "UserInitials",
+      "description": "What are your Initials?",
+      "type": "promptString"
+    },
+    {
+      "id": "TicketNumber",
+      "description": "What is the JIRA ticket Number?",
+      "type": "promptString"
+    }
+  ]
+}
