@@ -4,6 +4,7 @@
   "expiry": 2,
   "batchSize": 3,
   "configFilePath": "config/project-scratch-def.json",
+  "relaxAllIPRanges": true,
   "enableSourceTracking": false,
   "installAll": true,
   "fetchArtifacts": {
