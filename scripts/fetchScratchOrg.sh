@@ -12,10 +12,10 @@ sfdx sfpowerkit:pool:fetch -t dev
 #sfdx force:user:permset:assign -u $1 -n SalesUserPsl
 
 #push metadata
-sfdx force:source:push -f && echo "Succesfully pushed the metadata to the empty scratch org 😎" || {
-    echo "Not possible to push the metadata to your scratch Org ❌"
-    exit 1
-}
+#sfdx force:source:push -f && echo "Succesfully pushed the metadata to the empty scratch org 😎" || {
+#    echo "Not possible to push the metadata to your scratch Org ❌"
+#    exit 1
+#}
 
 # Import data to scratch org
 #sfdx force:data:tree:import -p ./data/plan.json --loglevel DEBUG && echo "Added some data to play around with 🐎" ||
