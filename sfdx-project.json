@@ -56,7 +56,6 @@
         }
       ]
     },
-    ,
     {
       "path": "./src/up-code",
       "package": "upStylesLWC",
