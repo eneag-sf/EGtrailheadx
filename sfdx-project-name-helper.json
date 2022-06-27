@@ -1,13 +1,12 @@
 {
   "packageAliases": {
-    "datatable": "0Ho5G000000XZNaSAO",
     "lm_alerts@1.0.0.2": "04t4S000000HweFQAS",
     "OIQ@1.0.0.1": "04t58000000SGw3AAG",
     "maps@238.13.0.1": "04t4P000002GIfrQAG",
     "bmpyrckt@1.10.0.1": "04t2w000009BbjoAAC",
     "sf_flowmodal@1.14.0.1": "04t2E000003VsuMQAS",
-    "FlowActionsBasePack@3.0.0.0": "04t4W000002vyJIQAY",
-    "FlowScreenComponentsBasePack@3.0.6.0": "04t4W000002vyJIQAY",
-    "datatable@4.0.5-0": "04t8b000001Eh4YAAS"
+    "FlowActionsBasePack@3.0.0.0": "04t8b000001Eh4YAAS",
+    "FlowScreenComponentsBasePack@3.0.6.0": "04t5G000003rUvVQAU",
+    "datatable@4.0.5-0": "04t5G000003rUvLQAU"
   }
 }
