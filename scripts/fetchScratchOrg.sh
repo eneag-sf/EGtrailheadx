@@ -20,14 +20,3 @@ sfdx sfpowerkit:pool:fetch -t dev
 # Import data to scratch org
 #sfdx force:data:tree:import -p ./data/plan.json --loglevel DEBUG && echo "Added some data to play around with 🐎" ||
     #echo "Not possible to insert the data records. However, you still have some standard data records in your scratch org."
-
-
-# Reset tracking to avoid unnessesary changes like layouts being pulled
-sfdx force:source:tracking:reset --noprompt
-
-echo "All done! Now go on and develop into your newly created scratch org 🙌"
-
-echo "Your new scratch org with open in your browser tab in a few secods 🎇"
-
-# Opens the scratch Org in a browser Tab when the build is finished
-sfdx force:org:open
