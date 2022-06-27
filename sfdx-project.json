@@ -18,6 +18,7 @@
       "package": "upSales",
       "versionName": "Sales Cloud App - 1.0.0",
       "versionNumber": "1.0.0.0",
+      "default": true,
       "dependencies": [
         {
           "package": "04t4S000000HweFQAS"
