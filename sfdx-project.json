@@ -19,6 +19,7 @@
       "versionName": "Sales Cloud App - 1.0.0",
       "versionNumber": "1.0.0.0",
       "default": true,
+      "assignPermSetsPostDeployment": ["dreamhouse"],
       "dependencies": [
         {
           "package": "04t4S000000HweFQAS"
