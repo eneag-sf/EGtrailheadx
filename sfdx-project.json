@@ -20,25 +20,28 @@
       "versionNumber": "1.0.0.0",
       "dependencies": [
         {
-          "package": "sf_flowmodal"
+          "package": "04t4S000000HweFQAS"
         },
         {
-          "package": "bmpyrckt"
+          "package": "04t58000000SGw3AAG"
         },
         {
-          "package": "lm_alerts"
+          "package": "04t4P000002GIfrQAG"
         },
         {
-          "package": "usf3"
+          "package": "04t2w000009BbjoAAC"
+        },
+        {
+          "package": "04t2E000003VsuMQAS"
+        },
+        {
+          "package": "04t8b000001Eh4YAAS"
         },
         {
           "package": "04t5G000003rUvVQAU"
         },
         {
           "package": "04t5G000003rUvLQAU"
-        },
-        {
-          "package": "04t4P000002GIfrQAG"
         }
       ]
     },
