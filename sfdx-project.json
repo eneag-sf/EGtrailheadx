@@ -1,92 +1,118 @@
 {
-  "packageDirectories": [
-    {
-      "path": "./src-env-specific-pre",
-      "package": "src-env-specific-pre",
-      "versionNumber": "1.0.0.0",
-      "ignoreOnStage": ["prepare", "validate", "quickbuild", "build"]
-    },
-    {
-      "path": "./src-env-specific-alias-pre",
-      "package": "src-env-specific-alias-pre",
-      "versionNumber": "1.0.0.0",
-      "aliasfy": true,
-      "ignoreOnStage": ["prepare", "validate", "quickbuild", "build"]
-    },
-    {
-      "path": "./up-data-model",
-      "package": "upSales",
-      "versionName": "Sales Cloud App - 1.0.0",
-      "versionNumber": "1.0.0.0",
-      "default": true,
-      "assignPermSetsPostDeployment": ["dreamhouse"],
-      "dependencies": [
+    "packageDirectories": [
         {
-          "package": "04t4S000000HweFQAS"
+            "path": ".\\src-env-specific-pre",
+            "package": "src-env-specific-pre",
+            "versionNumber": "1.0.0.0",
+            "ignoreOnStage": [
+                "prepare",
+                "validate",
+                "quickbuild",
+                "build"
+            ]
         },
         {
-          "package": "04t58000000SGw3AAG"
+            "path": ".\\src-env-specific-alias-pre",
+            "package": "src-env-specific-alias-pre",
+            "versionNumber": "1.0.0.0",
+            "aliasfy": true,
+            "ignoreOnStage": [
+                "prepare",
+                "validate",
+                "quickbuild",
+                "build"
+            ]
         },
         {
-          "package": "04t4P000002GIfrQAG"
+            "path": ".\\up-data-model",
+            "package": "upSales",
+            "versionName": "Sales Cloud App - 1.0.0",
+            "versionNumber": "1.0.0.0",
+            "default": true,
+            "assignPermSetsPostDeployment": [
+                "dreamhouse"
+            ],
+            "dependencies": [
+                {
+                    "package": "04t4S000000HweFQAS"
+                },
+                {
+                    "package": "04t58000000SGw3AAG"
+                },
+                {
+                    "package": "04t4P000002GIfrQAG"
+                },
+                {
+                    "package": "04t2w000009BbjoAAC"
+                },
+                {
+                    "package": "04t2E000003VsuMQAS"
+                },
+                {
+                    "package": "04t8b000001Eh4YAAS"
+                },
+                {
+                    "package": "04t5G000003rUvVQAU"
+                },
+                {
+                    "package": "04t5G000003rUvLQAU"
+                }
+            ]
         },
         {
-          "package": "04t2w000009BbjoAAC"
+            "path": ".\\up-code",
+            "package": "upCode",
+            "versionNumber": "1.0.0.0",
+            "dependencies": [
+                {
+                    "package": "upSales",
+                    "versionNumber": "1.0.0.LATEST"
+                }
+            ]
         },
         {
-          "package": "04t2E000003VsuMQAS"
+            "path": ".\\up-styles",
+            "package": "upStylesLWC",
+            "versionNumber": "1.0.0.0",
+            "dependencies": [
+                {
+                    "package": "upCode",
+                    "versionNumber": "1.0.0.LATEST"
+                }
+            ]
         },
         {
-          "package": "04t8b000001Eh4YAAS"
+            "path": ".\\src-access-management",
+            "package": "src-access-management",
+            "versionNumber": "1.0.0.0",
+            "ignoreOnStage": [
+                "prepare",
+                "validate",
+                "quickbuild",
+                "build"
+            ]
         },
         {
-          "package": "04t5G000003rUvVQAU"
-        },
-        {
-          "package": "04t5G000003rUvLQAU"
+            "path": ".\\src-env-specific-alias-post",
+            "package": "src-env-specific-alias-post",
+            "versionNumber": "1.0.0.0",
+            "aliasfy": true,
+            "alwaysDeploy": true,
+            "ignoreOnStage": [
+                "prepare",
+                "validate",
+                "quickbuild",
+                "build"
+            ]
         }
-      ]
+    ],
+    "namespace": "",
+    "sfdcLoginUrl": "https://login.salesforce.com",
+    "sourceApiVersion": "54.0",
+    "packageAliases": {
+        "upSales": "0Ho5f000000TNGfCAO",
+        "upCode": "0Ho5f000000TNGkCAO",
+        "upStylesLWC": "0Ho5f000000TNGpCAO"
     },
-    {
-      "path": "./up-code",
-      "package": "upCode",
-      "versionNumber": "1.0.0.0",
-      "dependencies": [
-        {
-          "package": "upSales",
-          "versionNumber": "1.0.0.LATEST"
-        }
-      ]
-    },
-    {
-      "path": "./up-styles",
-      "package": "upStylesLWC",
-      "versionNumber": "1.0.0.0",
-      "dependencies": [
-        {
-          "package": "upCode",
-          "versionNumber": "1.0.0.LATEST"
-        }
-      ]
-    },
-    {
-      "path": "./src-access-management",
-      "package": "src-access-management",
-      "versionNumber": "1.0.0.0",
-      "ignoreOnStage": ["prepare", "validate", "quickbuild", "build"]
-    },
-    {
-      "path": "./src-env-specific-alias-post",
-      "package": "src-env-specific-alias-post",
-      "versionNumber": "1.0.0.0",
-      "aliasfy": true,
-      "alwaysDeploy": true,
-      "ignoreOnStage": ["prepare", "validate", "quickbuild", "build"]
-    }
-  ],
-  "namespace": "",
-  "sfdcLoginUrl": "https://login.salesforce.com",
-  "sourceApiVersion": "54.0",
-  "packageAliases": {},
-  "plugins": {}
+    "plugins": {}
 }
