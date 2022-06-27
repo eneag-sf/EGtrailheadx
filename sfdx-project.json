@@ -14,15 +14,39 @@
       "ignoreOnStage": ["prepare", "validate", "quickbuild", "build"]
     },
     {
-      "path": "./src/core-crm",
-      "package": "core",
-      "versionName": "Version 1.0.0",
-      "versionNumber": "1.0.0.0",
+      "path": "./src/sales",
+      "package": "sales",
+      "versionName": "Sales Cloud App - 1.0.0",
+      "versionNumber": "1.0.0.NEXT",
       "dependencies": [
         {
-          "package": "04t2w000009BbjoAAC"
+          "package": "sf_flowmodal"
+        },
+        {
+          "package": "bmpyrckt"
+        },
+        {
+          "package": "lm_alerts"
+        },
+        {
+          "package": "usf3"
+        },
+        {
+          "package": "04t5G000003rUvVQAU"
+        },
+        {
+          "package": "04t5G000003rUvLQAU"
+        },
+        {
+          "package": "04t4P000002GIfrQAG"
         }
       ]
+    },
+    {
+      "path": "./src/service",
+      "package": "service",
+      "versionName": "Service Cloud - 1.0.0",
+      "versionNumber": "1.0.0.0"
     },
     {
       "path": "./src-ui",
@@ -45,6 +69,12 @@
       "ignoreOnStage": ["prepare", "validate", "quickbuild", "build"]
     },
     {
+      "path": "./data",
+      "package": "dataPackage",
+      "versionNumber": "1.0.0.0",
+      "type": "data"
+    },
+    {
       "path": "./src-temp",
       "package": "src-temp",
       "versionName": "Version 1.0.0",
@@ -55,7 +85,7 @@
   ],
   "namespace": "",
   "sfdcLoginUrl": "https://login.salesforce.com",
-  "sourceApiVersion": "52.0",
+  "sourceApiVersion": "54.0",
   "packageAliases": {},
   "plugins": {}
 }
