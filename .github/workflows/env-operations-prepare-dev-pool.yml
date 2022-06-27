@@ -62,5 +62,5 @@ jobs:
       - uses: actions/upload-artifact@v2
         if: ${{ always() }}
         with:
-          name: scratchorg-logs-pool-ci
+          name: scratchorg-logs-pool-dev
           path: .sfpowerscripts/prepare_logs
