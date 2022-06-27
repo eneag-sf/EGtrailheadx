@@ -14,8 +14,8 @@
       "ignoreOnStage": ["prepare", "validate", "quickbuild", "build"]
     },
     {
-      "path": "./src/sales",
-      "package": "sales",
+      "path": "./up-data-model",
+      "package": "upSales",
       "versionName": "Sales Cloud App - 1.0.0",
       "versionNumber": "1.0.0.0",
       "dependencies": [
@@ -46,16 +46,16 @@
       ]
     },
     {
-      "path": "./src/service",
-      "package": "service",
+      "path": "./src/up-code",
+      "package": "upCode",
       "versionName": "Service Cloud - 1.0.0",
-      "versionNumber": "1.0.0.0"
-    },
-    {
-      "path": "./src-ui",
-      "package": "src-ui",
-      "versionNumber": "1.1.0.0",
-      "ignoreOnStage": ["prepare", "validate", "quickbuild", "build"]
+      "versionNumber": "1.0.0.0",
+      "dependencies": [
+        {
+          "package": "upSales",
+          "versionNumber": "1.0.0.LATEST"
+        }
+      ]
     },
     {
       "path": "./src-access-management",
@@ -69,14 +69,6 @@
       "versionNumber": "1.0.0.0",
       "aliasfy": true,
       "alwaysDeploy": true,
-      "ignoreOnStage": ["prepare", "validate", "quickbuild", "build"]
-    },
-    {
-      "path": "./src-temp",
-      "package": "src-temp",
-      "versionName": "Version 1.0.0",
-      "versionNumber": "1.0.0.0",
-      "default": true,
       "ignoreOnStage": ["prepare", "validate", "quickbuild", "build"]
     }
   ],
