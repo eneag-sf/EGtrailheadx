@@ -69,12 +69,6 @@
       "ignoreOnStage": ["prepare", "validate", "quickbuild", "build"]
     },
     {
-      "path": "./data",
-      "package": "dataPackage",
-      "versionNumber": "1.0.0.0",
-      "type": "data"
-    },
-    {
       "path": "./src-temp",
       "package": "src-temp",
       "versionName": "Version 1.0.0",
