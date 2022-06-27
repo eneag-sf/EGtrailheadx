@@ -17,7 +17,7 @@
       "path": "./src/sales",
       "package": "sales",
       "versionName": "Sales Cloud App - 1.0.0",
-      "versionNumber": "1.0.0.NEXT",
+      "versionNumber": "1.0.0.0",
       "dependencies": [
         {
           "package": "sf_flowmodal"
