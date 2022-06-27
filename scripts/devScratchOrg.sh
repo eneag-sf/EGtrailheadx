@@ -1,10 +1,9 @@
 #!/bin/bash
 #function to delete scratchOrg and feature branch
 clearSetup(){
-    echo y | sfdx force:org:delete -u $1 --noprompt
-    git checkout developer
+    git checkout master
     git branch -D feature/$1
-    echo "An error occured during the scratch org creation. Please ask your Salesforce Admin for help."
+    echo "An error occured while fetching your scratch org. Please ask your Salesforce Admin for help."
     exit 1
 }
 
