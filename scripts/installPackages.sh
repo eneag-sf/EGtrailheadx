@@ -1,4 +1,6 @@
 #!/bin/bash
+#Inactive
+
 sfdx force:package:install -p 04t4S000000HweFQAS -w 30 --apexcompile package --securitytype AdminsOnly --noprompt -u 
 
 sfdx force:package:install -p 04t58000000SGw3AAG -w 30 --apexcompile package --securitytype AdminsOnly --noprompt -u 

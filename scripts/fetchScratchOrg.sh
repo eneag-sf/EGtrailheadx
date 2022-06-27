@@ -19,7 +19,7 @@ sfdx config:set defaultusername=$1
 
 #push metadata
 sfdx force:source:push -f -u $1 && echo "Succesfully pushed the metadata to the empty scratch org 😎" || {
-    echo "Not possible to push the metadata to scratch Org ❌"
+    echo "Not possible to push the metadata to your scratch Org ❌"
     exit 1
 }
 
