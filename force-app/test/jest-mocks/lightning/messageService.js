@@ -8,38 +8,18 @@ export const createMessageChannel = jest.fn();
 export const createMessageContext = jest.fn();
 export const MessageContext = jest.fn();
 export const releaseMessageContext = jest.fn();
-
-// Assigns a handler for each channel subscribed, so that multiple channels can be subscribed to
-// within the same test execution context
-const handlers = {};
-
+export const unsubscribe = jest.fn();
+// LMS stub implementation that lets you test a single message handler on a single channel
+var _messageChannel = null;
+var _messageHandler = null;
 export const publish = jest.fn((messageContext, messageChannel, message) => {
-    handlers[messageChannel]?.forEach((handlerObj) =>
-        handlerObj.handler(message)
-    );
+    if (_messageHandler && _messageChannel === messageChannel) {
+        _messageHandler(message);
+    }
 });
-
 export const subscribe = jest.fn(
     (messageContext, messageChannel, messageHandler) => {
-        const subscriptionId = crypto.randomUUID();
-
-        if (!handlers[messageChannel]) {
-            handlers[messageChannel] = [];
-        }
-
-        handlers[messageChannel].push({
-            id: subscriptionId,
-            handler: messageHandler
-        });
-
-        return { id: subscriptionId };
+        _messageChannel = messageChannel;
+        _messageHandler = messageHandler;
     }
 );
-
-export const unsubscribe = jest.fn((subscription) => {
-    Object.keys(handlers).forEach((messageChannel) => {
-        handlers[messageChannel] = handlers[messageChannel].filter(
-            (handler) => handler.id !== subscription.id
-        );
-    });
-});

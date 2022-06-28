@@ -9,8 +9,8 @@ describe('c-error-panel', () => {
         }
     });
 
-    // Helper function to wait until the microtask queue is empty. This is needed for promise
-    // timing when calling imperative Apex.
+    // Helper function to wait until the microtask queue is empty.
+    // Used when having to wait for asynchronous DOM updates.
     async function flushPromises() {
         return Promise.resolve();
     }
@@ -49,8 +49,8 @@ describe('c-error-panel', () => {
         });
         document.body.appendChild(element);
 
-        const inputEl = element.shadowRoot.querySelector('lightning-input');
-        expect(inputEl).toBeNull();
+        const anchorEl = element.shadowRoot.querySelector('a');
+        expect(anchorEl).toBeNull();
     });
 
     it('displays error details when errors are passed as parameters', async () => {
@@ -64,12 +64,12 @@ describe('c-error-panel', () => {
         const element = createElement('c-error-panel', {
             is: ErrorPanel
         });
+        element.type = 'inlineMessage';
         element.errors = ERROR_MESSAGES_INPUT;
         document.body.appendChild(element);
 
-        const inputEl = element.shadowRoot.querySelector('a');
-        inputEl.checked = true;
-        inputEl.dispatchEvent(new CustomEvent('click'));
+        // Click link to show details
+        element.shadowRoot.querySelector('a').click();
 
         // Wait for any asynchronous DOM updates
         await flushPromises();
@@ -116,12 +116,6 @@ describe('c-error-panel', () => {
         element.type = 'noDataIllustration';
         element.errors = ERROR_MESSAGES_INPUT;
         document.body.appendChild(element);
-
-        // Click link to show details
-        element.shadowRoot.querySelector('a').click();
-
-        // Wait for any asynchronous DOM updates
-        await flushPromises();
 
         await expect(element).toBeAccessible();
     });
