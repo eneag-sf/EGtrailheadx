@@ -28,8 +28,8 @@
       ]
     },
     {
-      "path": "./src-access-management",
-      "package": "src-access-management",
+      "path": "./src-env-specific",
+      "package": "src-env-specific",
       "versionNumber": "1.0.0.0",
       "ignoreOnStage": ["prepare", "validate", "quickbuild", "build"]
     }
