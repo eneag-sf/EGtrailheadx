@@ -2,9 +2,9 @@
   "packageDirectories": [
     {
       "path": "./force-app",
-      "package": "BetaProject",
-      "versionName": "Beta Project - 1.0.0",
-      "versionNumber": "1.0.0.0",
+      "package": "DreamhouseLWC",
+      "versionName": "Summer '23",
+      "versionNumber": "55.0.0.0",
       "default": true,
       "dependencies": [
         {
