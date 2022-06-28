@@ -1,25 +1,10 @@
 {
   "packageDirectories": [
     {
-      "path": "./src-env-specific-pre",
-      "package": "src-env-specific-pre",
-      "versionNumber": "1.0.0.0",
-      "ignoreOnStage": ["prepare", "validate", "quickbuild", "build"]
-    },
-    {
-      "path": "./src-env-specific-alias-pre",
-      "package": "src-env-specific-alias-pre",
-      "versionNumber": "1.0.0.0",
-      "aliasfy": true,
-      "ignoreOnStage": ["prepare", "validate", "quickbuild", "build"]
-    },
-    {
-      "path": "./up-data-model",
-      "package": "upSales",
-      "versionName": "Sales Cloud App - 1.0.0",
+      "path": "./scr/core-crm",
+      "package": "coreCRM",
+      "versionName": "CoreCRM - 1.0.0",
       "versionNumber": "1.0.0.NEXT",
-      "default": true,
-      "assignPermSetsPostDeployment": ["dreamhouse"],
       "dependencies": [
         {
           "package": "04t4S000000HweFQAS"
@@ -48,12 +33,23 @@
       ]
     },
     {
-      "path": "./up-code",
-      "package": "upCode",
+      "path": "./scr-sales",
+      "package": "SalesCloud",
       "versionNumber": "1.0.0.NEXT",
       "dependencies": [
         {
-          "package": "upSales",
+          "package": "coreCRM",
+          "versionNumber": "1.0.0.LATEST"
+        }
+      ]
+    },
+    {
+      "path": "./scr-service",
+      "package": "ServiceCloud",
+      "versionNumber": "1.0.0.NEXT",
+      "dependencies": [
+        {
+          "package": "coreCRM",
           "versionNumber": "1.0.0.LATEST"
         }
       ]
@@ -65,22 +61,17 @@
       "ignoreOnStage": ["prepare", "validate", "quickbuild", "build"]
     },
     {
-      "path": "./src-env-specific-alias-post",
-      "package": "src-env-specific-alias-post",
+      "path": "./src-temp",
+      "package": "src-temp",
+      "versionName": "Version 1.0.0",
       "versionNumber": "1.0.0.0",
-      "aliasfy": true,
-      "alwaysDeploy": true,
+      "default": true,
       "ignoreOnStage": ["prepare", "validate", "quickbuild", "build"]
     }
   ],
   "namespace": "",
   "sfdcLoginUrl": "https://login.salesforce.com",
   "sourceApiVersion": "54.0",
-  "packageAliases": {
-    "upSales": "0Ho5f000000TNGfCAO",
-    "upCode": "0Ho5f000000TNGkCAO",
-    "upSales@1.0.0-0": "04t5f000000elWrAAI",
-    "upCode@1.0.0-0": "04t5f000000elWwAAI"
-  },
+  "packageAliases": {},
   "plugins": {}
 }
