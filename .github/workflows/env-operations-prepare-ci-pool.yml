@@ -1,5 +1,5 @@
 # This pipeline creates the CI pools used during the validate workflow
-name: "Create CI Pools - Auto Triggered"
+name: "Recreate CI Pool - Auto Triggered"
 
 on:
   workflow_dispatch:

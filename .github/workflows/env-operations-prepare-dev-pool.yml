@@ -1,5 +1,5 @@
 # This pipeline creates the DEV pools to be used by devs to develop features
-name: "Create DEV Pools - Auto Triggered"
+name: "Recreate DEV Pool - Auto Triggered"
 
 on:
   workflow_dispatch:
