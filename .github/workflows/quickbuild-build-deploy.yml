@@ -1,5 +1,4 @@
 # This pipeline quickbuilds, deploy to DEV, builds and publishes packages to artifact repository
-
 name: "CI Pipeline - Auto Triggered"
 
 on:
@@ -9,14 +8,6 @@ on:
       - release/**
 
   workflow_dispatch:
-
-#Set the environment variables for tracking metrics
-#env:
-#SFPOWERSCRIPTS_NEWRELIC: 'true'
-#SFPOWERSCRIPTS_NEWRELIC_API_KEY: '${{ secrets.NEWRELIC_INSIGHT_INSERT_KEYS }}'
-#SFPOWERSCRIPTS_DATADOG: 'true'
-#SFPOWERSCRIPTS_DATADOG_HOST: '${{ secrets.DATADOG_HOST }}'
-#SFPOWERSCRIPTS_DATADOG_API_KEY: '${{ secrets.DATADOG_API_KEY }}'
 
 jobs:
   quickbuild:

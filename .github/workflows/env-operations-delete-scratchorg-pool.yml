@@ -1,33 +1,24 @@
-# Return an used scratch org back to the pool for replenishment
-
-name: "Delete specific Scratch Org - User Triggered"
+# Deletes a scratch orgs based on the given username
+name: "Delete a specific Scratch Org - User Triggered"
 
 on:
   workflow_dispatch:
     inputs:
       username:
-        description: "Username of the scratch org"
+        description: "Enter the Scratch org username here"
         required: true
 
-#Set the environment variables for tracking metrics
-#env:
-#SFPOWERSCRIPTS_NEWRELIC: 'true'
-#SFPOWERSCRIPTS_NEWRELIC_API_KEY: '${{ secrets.NEWRELIC_INSIGHT_INSERT_KEYS }}'
-#SFPOWERSCRIPTS_DATADOG: 'true'
-#SFPOWERSCRIPTS_DATADOG_HOST: '${{ secrets.DATADOG_HOST }}'
-#SFPOWERSCRIPTS_DATADOG_API_KEY: '${{ secrets.DATADOG_API_KEY }}'
-
 jobs:
-  delete-scracthorg:
+  delete-scratchorg:
     name: "Return a used scratch org to the pool ${{ github.event.inputs.username }}"
     runs-on: ubuntu-latest
     container: ghcr.io/dxatscale/sfpowerscripts
 
     steps:
-      - name: "Authenticate Dev Hub"
+      - name: "Authenticate in Dev Hub"
         run: |
           echo "${{ secrets.DEVHUB_SFDX_AUTH_URL }}" > ./authfile
           sfdx auth:sfdxurl:store -f authfile -a devhub
 
-      - name: "Delete scratch org ${{ github.event.inputs.username }}"
+      - name: "Delete the specified scratch org: ${{ github.event.inputs.username }}"
         run: "sfdx sfpowerscripts:pool:org:delete -u ${{ github.event.inputs.username }} -v devhub"

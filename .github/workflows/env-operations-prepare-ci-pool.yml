@@ -1,28 +1,19 @@
-# This pipeline creates the CI pools used during validate
-
+# This pipeline creates the CI pools used during the validate workflow
 name: "Create CI Pools - Auto Triggered"
 
 on:
   workflow_dispatch:
     inputs:
       gitRef:
-        description: "Commit Id from where the pools should be created"
+        description: "Branch from where the pools should be created"
         required: false
         default: "master"
   schedule:
-    - cron: "0 14 * * *"
-
-#Set the environment variables for tracking metrics
-#env:
-#SFPOWERSCRIPTS_NEWRELIC: 'true'
-#SFPOWERSCRIPTS_NEWRELIC_API_KEY: '${{ secrets.NEWRELIC_INSIGHT_INSERT_KEYS }}'
-#SFPOWERSCRIPTS_DATADOG: 'true'
-#SFPOWERSCRIPTS_DATADOG_HOST: '${{ secrets.DATADOG_HOST }}'
-#SFPOWERSCRIPTS_DATADOG_API_KEY: '${{ secrets.DATADOG_API_KEY }}'
+    - cron: "30 3 * * *"
 
 jobs:
   pool-ci-pool:
-    name: "Replenish CI Pool"
+    name: "Refill the CI Pool"
     runs-on: ubuntu-latest
     container: ghcr.io/dxatscale/sfpowerscripts
     timeout-minutes: 720 #Set to Maximum Time out
@@ -33,7 +24,7 @@ jobs:
           ref: ${{ github.event.inputs.gitRef }}
           fetch-depth: 0
 
-      - name: "Authenticate Dev Hub"
+      - name: "Authenticate in Dev Hub"
         run: |
           echo "${{ secrets.DEVHUB_SFDX_AUTH_URL }}" > ./authfile
           sfdx auth:sfdxurl:store -f authfile -a devhub
@@ -43,7 +34,7 @@ jobs:
         with:
           registry-url: "https://npm.pkg.github.com"
 
-      - name: "Prepare a pool of scratch orgs"
+      - name: "Prepare a pool of CI scratch orgs"
         run: "sfdx sfpowerscripts:orchestrator:prepare -f config/ci-pool-def.json -v devhub"
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
