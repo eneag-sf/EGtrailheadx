@@ -6,6 +6,7 @@
       "versionName": "Summer '23",
       "versionNumber": "55.0.0.0",
       "default": true,
+      "assignPermSetsPostDeployment": ["dreamhouse"],
       "dependencies": [
         {
           "package": "04t4S000000HweFQAS"
