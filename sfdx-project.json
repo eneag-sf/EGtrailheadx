@@ -5,20 +5,7 @@
       "package": "BetaProject",
       "versionName": "Beta Project - 1.0.0",
       "versionNumber": "1.0.0.NEXT",
-      "default": true
-    },
-    {
-      "path": "./src-access-management",
-      "package": "src-access-management",
-      "versionNumber": "1.0.0.0",
-      "ignoreOnStage": ["prepare", "validate", "quickbuild", "build"]
-    },
-    {
-      "path": "./scr-package",
-      "package": "src-package",
-      "versionName": "Version 1.0.0",
-      "versionNumber": "1.0.0.0",
-      "ignoreOnStage": ["prepare", "validate", "quickbuild", "build"],
+      "default": true,
       "dependencies": [
         {
           "package": "04t4S000000HweFQAS"
@@ -39,6 +26,19 @@
           "package": "04t5G000003rUvLQAU"
         }
       ]
+    },
+    {
+      "path": "./src-access-management",
+      "package": "src-access-management",
+      "versionNumber": "1.0.0.0",
+      "ignoreOnStage": ["prepare", "validate", "quickbuild", "build"]
+    },
+    {
+      "path": "./scr-package",
+      "package": "src-package",
+      "versionName": "Version 1.0.0",
+      "versionNumber": "1.0.0.0",
+      "ignoreOnStage": ["prepare", "validate", "quickbuild", "build"]
     }
   ],
   "namespace": "",
