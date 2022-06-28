@@ -1,10 +1,24 @@
 {
   "packageDirectories": [
     {
-      "path": "./scr/core-crm",
-      "package": "coreCRM",
-      "versionName": "CoreCRM - 1.0.0",
+      "path": "./force-app",
+      "package": "Beta Project",
+      "versionName": "BetaProject - 1.0.0",
       "versionNumber": "1.0.0.NEXT",
+      "default": true
+    },
+    {
+      "path": "./src-access-management",
+      "package": "src-access-management",
+      "versionNumber": "1.0.0.0",
+      "ignoreOnStage": ["prepare", "validate", "quickbuild", "build"]
+    },
+    {
+      "path": "./scr-package",
+      "package": "src-package",
+      "versionName": "Version 1.0.0",
+      "versionNumber": "1.0.0.0",
+      "ignoreOnStage": ["prepare", "validate", "quickbuild", "build"],
       "dependencies": [
         {
           "package": "04t4S000000HweFQAS"
@@ -13,13 +27,7 @@
           "package": "04t58000000SGw3AAG"
         },
         {
-          "package": "04t4P000002GIfrQAG"
-        },
-        {
           "package": "04t2w000009BbjoAAC"
-        },
-        {
-          "package": "04t2E000003VsuMQAS"
         },
         {
           "package": "04t8b000001Eh4YAAS"
@@ -31,42 +39,6 @@
           "package": "04t5G000003rUvLQAU"
         }
       ]
-    },
-    {
-      "path": "./scr-sales",
-      "package": "SalesCloud",
-      "versionNumber": "1.0.0.NEXT",
-      "dependencies": [
-        {
-          "package": "coreCRM",
-          "versionNumber": "1.0.0.LATEST"
-        }
-      ]
-    },
-    {
-      "path": "./scr-service",
-      "package": "ServiceCloud",
-      "versionNumber": "1.0.0.NEXT",
-      "dependencies": [
-        {
-          "package": "coreCRM",
-          "versionNumber": "1.0.0.LATEST"
-        }
-      ]
-    },
-    {
-      "path": "./src-access-management",
-      "package": "src-access-management",
-      "versionNumber": "1.0.0.0",
-      "ignoreOnStage": ["prepare", "validate", "quickbuild", "build"]
-    },
-    {
-      "path": "./src-temp",
-      "package": "src-temp",
-      "versionName": "Version 1.0.0",
-      "versionNumber": "1.0.0.0",
-      "default": true,
-      "ignoreOnStage": ["prepare", "validate", "quickbuild", "build"]
     }
   ],
   "namespace": "",
