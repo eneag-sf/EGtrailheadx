@@ -32,13 +32,6 @@
       "package": "src-access-management",
       "versionNumber": "1.0.0.0",
       "ignoreOnStage": ["prepare", "validate", "quickbuild", "build"]
-    },
-    {
-      "path": "./scr-package",
-      "package": "src-package",
-      "versionName": "Version 1.0.0",
-      "versionNumber": "1.0.0.0",
-      "ignoreOnStage": ["prepare", "validate", "quickbuild", "build"]
     }
   ],
   "namespace": "",
