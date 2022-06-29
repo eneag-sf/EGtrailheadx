@@ -3,3 +3,4 @@ artifacts
 .sfdx
 .npmrc
 .sf
+authInfo.txt
