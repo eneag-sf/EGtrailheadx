@@ -16,7 +16,7 @@ echo $usernameSO
 sfdx force:alias:set $1=$usernameSO
 
 # Assign the scratch Org as deafult
-sfdx config:set defaultusername=$usernameSO
+sfdx config:set defaultusername=$1
 
 # Assign standard Sales User permission set to user
 #sfdx force:user:permset:assign -u $1 -n SalesUserPsl
@@ -30,3 +30,13 @@ sfdx config:set defaultusername=$usernameSO
 # Import data to scratch org
 #sfdx force:data:tree:import -p ./data/plan.json --loglevel DEBUG && echo "Added some data to play around with 🐎" ||
     #echo "Not possible to insert the data records. However, you still have some standard data records in your scratch org."
+
+# Reset tracking to avoid unnessesary changes like layouts being pulled
+sfdx force:source:tracking:reset -u $1 --noprompt
+
+echo "All done! Now go on and develop into your newly created scratch org 🙌"
+
+echo "Your new scratch org with open in your browser tab in a few secods 🎇"
+
+# Opens the scratch Org in a browser Tab when the build is finished
+sfdx force:org:open -u $1
