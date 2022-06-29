@@ -1,51 +1,50 @@
 {
-    "packageDirectories": [
+  "packageDirectories": [
+    {
+      "path": "./force-app",
+      "package": "DreamHouseORGD",
+      "versionName": "Summer Release '23",
+      "versionNumber": "55.0.0.0",
+      "default": true,
+      "assignPermSetsPostDeployment": ["dreamhouse"]
+    },
+    {
+      "path": "./src-env-specific",
+      "package": "src-env-specific",
+      "versionNumber": "1.0.0.0",
+      "ignoreOnStage": ["prepare", "validate", "quickbuild", "build"]
+    },
+
+    {
+      "path": "./packages",
+      "package": "Packages",
+      "versionNumber": "1.0.0.0",
+      "ignoreOnStage": ["prepare", "validate", "quickbuild", "build"],
+      "dependencies": [
         {
-            "path": ".\\force-app",
-            "package": "DreamHouseORGD",
-            "versionName": "Summer Release '23",
-            "versionNumber": "55.0.0.0",
-            "default": true,
-            "assignPermSetsPostDeployment": [
-                "dreamhouse"
-            ],
-            "dependencies": [
-                {
-                    "package": "04t4S000000HweFQAS"
-                },
-                {
-                    "package": "04t58000000SGw3AAG"
-                },
-                {
-                    "package": "04t2w000009BbjoAAC"
-                },
-                {
-                    "package": "04t8b000001Eh4YAAS"
-                },
-                {
-                    "package": "04t5G000003rUvVQAU"
-                },
-                {
-                    "package": "04t5G000003rUvLQAU"
-                }
-            ]
+          "package": "04t4S000000HweFQAS"
         },
         {
-            "path": ".\\src-env-specific",
-            "package": "src-env-specific",
-            "versionNumber": "1.0.0.0",
-            "ignoreOnStage": [
-                "prepare",
-                "validate",
-                "quickbuild",
-                "build"
-            ]
+          "package": "04t58000000SGw3AAG"
+        },
+        {
+          "package": "04t2w000009BbjoAAC"
+        },
+        {
+          "package": "04t8b000001Eh4YAAS"
+        },
+        {
+          "package": "04t5G000003rUvVQAU"
+        },
+        {
+          "package": "04t5G000003rUvLQAU"
         }
-    ],
-    "namespace": "",
-    "sfdcLoginUrl": "https://login.salesforce.com",
-    "sourceApiVersion": "54.0",
-    "packageAliases": {
-        "DreamHouseORGD": "0Ho5f000000TNHJCA4"
-    }
+      ]
+  ],
+  "namespace": "",
+  "sfdcLoginUrl": "https://login.salesforce.com",
+  "sourceApiVersion": "54.0",
+  "packageAliases": {
+    "DreamHouseORGD": "0Ho5f000000TNHJCA4"
+  }
 }
