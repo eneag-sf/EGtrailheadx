@@ -1,0 +1,16 @@
+[93m[1m-------------------------------------------------------------------------------------------[22m[39m
+[93m[1msfpowerkit  -- The DX@Scale Developer Toolkit - Version:4.2.8 - Release:May 22[22m[39m
+[93m[1m-------------------------------------------------------------------------------------------[22m[39m
+======== Scratch org details ========
+KEY          VALUE
+───────────  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+Id           2SR5f000000CyhgGAC
+orgId        00D8D0000004ghB
+loginURL     https://customization-agility-9072-dev-ed.my.salesforce.com/
+username     test-ahuu8qywum8r@example.com
+password     d@xhu8tiFzgoh
+expiryDate   2022-07-01
+sfdxAuthUrl  force://PlatformCLI::5Aep861O0wnNQ1t2sp8sRlXZhfZzxIMUeNeGoJZV_tDQ9YPBhUHV6msTAxrHWfgeXEaDS2BWxjdKY_tBRyeL2ya@customization-agility-9072-dev-ed.my.salesforce.com
+status       Assigned
+Initiating Auto Login for Scratch Org with test-ahuu8qywum8r@example.com
+Successfully authorized test-ahuu8qywum8r@example.com with org ID 00D8D0000004ghBUAQ

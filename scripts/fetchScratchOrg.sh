@@ -6,7 +6,7 @@ if [ -z $1 ]
 fi
 
 # Fetch Scratch Org from Pool
-sfdx sfpowerkit:pool:fetch -t dev
+sfdx sfpowerkit:pool:fetch -t dev > authInfo.json
 
 # Assign standard Sales User permission set to user
 #sfdx force:user:permset:assign -u $1 -n SalesUserPsl
