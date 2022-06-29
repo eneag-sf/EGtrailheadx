@@ -5,8 +5,18 @@ if [ -z $1 ]
     exit 1
 fi
 
-# Fetch Scratch Org from Pool
-sfdx sfpowerkit:pool:fetch -t dev > authInfo.json
+# Fetch Scratch Org from DEV Pool
+sfdx sfpowerkit:pool:fetch -t ci > authInfo.txt
+
+# Find the username of the fetched Scratch Org and assign it to a variable
+usernameSO="$(grep -oP '^username\s+\K\S+' authInfo.txt)"
+echo $usernameSO
+
+# Set alias for scratch Org the same as the feature branch
+sfdx force:alias:set $1=$usernameSO
+
+# Assign the scratch Org as deafult
+sfdx config:set defaultusername=$usernameSO
 
 # Assign standard Sales User permission set to user
 #sfdx force:user:permset:assign -u $1 -n SalesUserPsl
