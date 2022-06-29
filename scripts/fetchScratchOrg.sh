@@ -6,7 +6,7 @@ if [ -z $1 ]
 fi
 
 # Fetch Scratch Org from DEV Pool
-sfdx sfpowerkit:pool:fetch -t ci > authInfo.txt
+sfdx sfpowerkit:pool:fetch -t dev > authInfo.txt
 
 # Find the username of the fetched Scratch Org and assign it to a variable
 usernameSO="$(grep -oP '^username\s+\K\S+' authInfo.txt)"
