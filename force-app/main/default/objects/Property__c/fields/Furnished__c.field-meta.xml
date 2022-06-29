@@ -3,7 +3,7 @@
     <fullName>Furnished__c</fullName>
     <defaultValue>false</defaultValue>
     <externalId>false</externalId>
-    <inlineHelpText>This is a help text which tells us if the house is ready to be used or not.</inlineHelpText>
+    <inlineHelpText>This is a help text which tells us if the house is ready to be used or not for the users.</inlineHelpText>
     <label>Furnished?</label>
     <trackFeedHistory>false</trackFeedHistory>
     <trackHistory>false</trackHistory>
