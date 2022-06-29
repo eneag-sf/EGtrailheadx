@@ -14,7 +14,6 @@
       "versionNumber": "1.0.0.0",
       "ignoreOnStage": ["prepare", "validate", "quickbuild", "build"]
     },
-
     {
       "path": "./packages",
       "package": "Packages",
@@ -39,8 +38,7 @@
         {
           "package": "04t5G000003rUvLQAU"
         }
-      ]
-  ],
+      ],
   "namespace": "",
   "sfdcLoginUrl": "https://login.salesforce.com",
   "sourceApiVersion": "54.0",
