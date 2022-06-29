@@ -9,7 +9,7 @@
   "installAll": true,
   "fetchArtifacts": {
     "npm": {
-      "scope": "@eneagjoka"
+      "scope": "@eneag-sf"
     }
   }
 }
