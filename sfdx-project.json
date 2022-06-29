@@ -38,7 +38,9 @@
         {
           "package": "04t5G000003rUvLQAU"
         }
-      ],
+      ]
+    }
+  ],
   "namespace": "",
   "sfdcLoginUrl": "https://login.salesforce.com",
   "sourceApiVersion": "54.0",
