@@ -9,7 +9,7 @@ on:
         required: false
         default: "master"
   schedule:
-    - cron: "45 4 * * *"
+    - cron: "45 2 * * *"
 
 jobs:
   pool:
