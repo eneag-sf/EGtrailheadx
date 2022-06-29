@@ -1,9 +1,9 @@
 {
   "packageDirectories": [
     {
-      "path": ".\\force-app",
+      "path": "./force-app",
       "package": "Dreamhouse2022",
-      "versionName": "Summer '23",
+      "versionName": "Summer Release '23",
       "versionNumber": "55.0.0.0",
       "default": true,
       "assignPermSetsPostDeployment": ["dreamhouse"],
@@ -29,17 +29,10 @@
       ]
     },
     {
-      "path": ".\\src-env-specific",
+      "path": "./src-env-specific",
       "package": "src-env-specific",
       "versionNumber": "1.0.0.0",
       "ignoreOnStage": ["prepare", "validate", "quickbuild", "build"]
-    },
-    {
-      "path": "force-app",
-      "package": "DreamHouse2022",
-      "versionName": "ver 0.1",
-      "versionNumber": "0.1.0.NEXT",
-      "default": false
     }
   ],
   "namespace": "",
