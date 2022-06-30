@@ -1,4 +1,4 @@
-# This pipeline creates the DEV pools to be used by devs to develop features
+# This workflow creates the DEV pools to be used by devs to develop features
 name: "Recreate DEV Pool - Auto Triggered"
 
 on:

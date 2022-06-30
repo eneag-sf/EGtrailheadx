@@ -1,4 +1,4 @@
-# Deletes a scratch orgs based on the given username
+# This workflow deletes a scratch orgs based on the given username
 name: "Delete a specific Scratch Org - User Triggered"
 
 on:

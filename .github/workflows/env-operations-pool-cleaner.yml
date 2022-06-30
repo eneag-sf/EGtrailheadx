@@ -1,4 +1,4 @@
-# This pipeline deletes all the scratch orgs from the pool on a set time, so that pools can be recreated with new artifacts
+# This workflow deletes all the scratch orgs from the pool on a set time, so that pools can be recreated with new artifacts
 name: "Scratch Org Pool Cleaner - Auto Scheduled"
 
 on:
