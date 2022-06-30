@@ -4,3 +4,4 @@ artifacts
 .npmrc
 .sf
 authInfo.txt
+logs
