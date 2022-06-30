@@ -30,7 +30,7 @@ jobs:
         run: "sfdx sfpowerscripts:orchestrator:validate -p ci -v devhub -x"
 
   static:
-    name: "static-analysis-of-Apex-classes-using-PMD"
+    name: "Static analysis of-Apex Classes using PMD"
     runs-on: ubuntu-latest
     container: ghcr.io/dxatscale/sfpowerscripts
     steps:
