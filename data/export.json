@@ -1,0 +1,19 @@
+{
+  "objects": [
+    {
+      "query": "SELECT Id, Phone__c, Name, Title__c, Mobile_Phone__c, Email__c, Picture__c FROM Broker__c",
+      "operation": "Upsert",
+      "externalId": "Name"
+    },
+    {
+      "query": "SELECT Id, Name, City__c, State__c,Zip__c,Price__c,Beds__c,Baths__c,Location__Longitude__s,Location__Latitude__s,Picture__c,Thumbnail__c,Tags__c,Description__c,Broker__c, Address__c FROM Property__c",
+      "operation": "Upsert",
+      "externalId": "Name"
+    },
+    {
+      "query": "SELECT Id, FirstName, LastName, Phone, Email, Level__c, Languages__c FROM Contact",
+      "operation": "Upsert",
+      "externalId": "Email"
+    }
+  ]
+}

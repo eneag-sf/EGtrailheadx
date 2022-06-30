@@ -11,8 +11,14 @@
     {
       "path": "./src-env-specific",
       "package": "src-env-specific",
-      "versionNumber": "1.0.0.NEXT",
+      "versionNumber": "1.0.0.0",
       "ignoreOnStage": ["prepare", "validate", "quickbuild", "build"]
+    },
+    {
+      "path": "./data",
+      "package": "DataHD",
+      "type": "data",
+      "versionNumber": "1.5.0.0"
     },
     {
       "path": "./packages",
