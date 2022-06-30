@@ -1,5 +1,6 @@
 release: "Release-1.0"
 skipIfAlreadyInstalled: true
+promotePackagesBeforeDeploymentToOrg: "PROD"
 artifacts:
   force-app: LATEST_TAG
   src-env-specific: LATEST_TAG
