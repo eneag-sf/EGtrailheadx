@@ -31,9 +31,9 @@ jobs:
         with:
           registry-url: "https://npm.pkg.github.com"
 
-      # Release to environment
+      # Release to environment, edited -u st to -u uat
       - name: "Release to UAT"
-        run: 'sfdx sfpowerscripts:orchestrator:release -u st -p ${{ github.event.inputs.pathToReleaseDef }} --npm --scope ${{ github.repository_owner }} --generatechangelog --branchname changelog -g "::group::,::endgroup::"'
+        run: 'sfdx sfpowerscripts:orchestrator:release -u uat -p ${{ github.event.inputs.pathToReleaseDef }} --npm --scope ${{ github.repository_owner }} --generatechangelog --branchname changelog -g "::group::,::endgroup::"'
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
