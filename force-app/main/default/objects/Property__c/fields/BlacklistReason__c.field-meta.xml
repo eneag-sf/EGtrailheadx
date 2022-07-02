@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>State__c</fullName>
+    <fullName>BlacklistReason__c</fullName>
+    <description>Tell us why?</description>
     <externalId>false</externalId>
-    <label>State</label>
-    <length>25</length>
+    <inlineHelpText>Tell us why?</inlineHelpText>
+    <label>Blacklist reason?</label>
     <required>false</required>
     <trackFeedHistory>false</trackFeedHistory>
     <trackHistory>false</trackHistory>
     <trackTrending>false</trackTrending>
-    <type>Text</type>
-    <unique>false</unique>
+    <type>TextArea</type>
 </CustomField>
