@@ -5,3 +5,4 @@ artifacts
 .sf
 authInfo.txt
 **/logs
+**/target
