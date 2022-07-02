@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>State__c</fullName>
+    <fullName>Blacklisted__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>yes or No?</description>
     <externalId>false</externalId>
-    <label>State</label>
-    <length>25</length>
-    <required>false</required>
+    <inlineHelpText>Is it?</inlineHelpText>
+    <label>Blacklisted?</label>
     <trackFeedHistory>false</trackFeedHistory>
     <trackHistory>false</trackHistory>
     <trackTrending>false</trackTrending>
-    <type>Text</type>
-    <unique>false</unique>
+    <type>Checkbox</type>
 </CustomField>
