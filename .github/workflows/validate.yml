@@ -10,9 +10,9 @@ on:
       - release/**
     # Specifing the force-app the directory that is relevant for the check
     paths:
-      - "force-app/**"
-      - "data"
-      - "src-env-specific"
+      - force-app/**
+      - data/**
+      - src-env-specific/**
 
 jobs:
   validate:
