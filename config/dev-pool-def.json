@@ -1,7 +1,7 @@
 {
   "tag": "dev",
   "maxAllocation": 5,
-  "expiry": 5,
+  "expiry": 2,
   "batchSize": 5,
   "configFilePath": "config/project-scratch-def.json",
   "relaxAllIPRanges": true,

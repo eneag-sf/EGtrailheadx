@@ -1,8 +1,8 @@
 {
   "tag": "ci",
-  "maxAllocation": 3,
+  "maxAllocation": 4,
   "expiry": 2,
-  "batchSize": 3,
+  "batchSize": 4,
   "configFilePath": "config/project-scratch-def.json",
   "relaxAllIPRanges": true,
   "enableSourceTracking": false,
