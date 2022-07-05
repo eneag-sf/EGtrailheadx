@@ -3,7 +3,7 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "Fetch new Scratch Org",
+      "label": "Fetch new Scratch Org 🚀",
       "type": "shell",
       "command": "./scripts/devScratchOrg.sh ${input:UserInitials}-${input:TicketNumber} ",
       "problemMatcher": []
