@@ -60,4 +60,4 @@ jobs:
       - name: "validate metadata coverage"
         shell: bash
         run: |
-          sfdx sfpowerkit:package:valid -n force-app -b StandardValueSet
+          sfdx sfpowerkit:package:valid -n DreamHouseORGD -b StandardValueSet
