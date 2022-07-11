@@ -1,5 +1,6 @@
 #!/bin/bash
 #function to delete scratchOrg and feature branch
+SECONDS=0
 clearSetup(){
     git checkout master
     git branch -D feature/$1
@@ -21,3 +22,5 @@ bash ./scripts/fetchScratchOrg.sh $1 ||
     clearSetup $1
     
 git push --set-upstream origin feature/$1
+duration=$SECONDS
+echo "$(($duration / 60)) minutes and $(($duration % 60)) seconds elapsed."
