@@ -23,4 +23,4 @@ bash ./scripts/fetchScratchOrg.sh $1 ||
     
 git push --set-upstream origin feature/$1
 duration=$SECONDS
-echo "$(($duration / 60)) minutes and $(($duration % 60)) seconds elapsed."
+echo "➡️ This script took $(($duration / 60)) minutes and $(($duration % 60)) seconds to complete 🕓."
