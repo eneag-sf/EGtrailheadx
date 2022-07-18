@@ -128,11 +128,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Property__c.Furnished__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
         <field>Property__c.Location__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -191,6 +186,11 @@
         <field>Property__c.Zip__c</field>
         <readable>true</readable>
     </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>TestObject__c.TextField__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
     <hasActivationRequired>false</hasActivationRequired>
     <label>dreamhouse</label>
     <objectPermissions>
@@ -211,6 +211,15 @@
         <object>Property__c</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>TestObject__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
     <tabSettings>
         <tab>Broker__c</tab>
         <visibility>Visible</visibility>
@@ -229,6 +238,10 @@
     </tabSettings>
     <tabSettings>
         <tab>Settings</tab>
+        <visibility>Visible</visibility>
+    </tabSettings>
+    <tabSettings>
+        <tab>TestObject__c</tab>
         <visibility>Visible</visibility>
     </tabSettings>
 </PermissionSet>
