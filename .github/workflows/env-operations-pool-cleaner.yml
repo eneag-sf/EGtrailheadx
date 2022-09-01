@@ -3,8 +3,8 @@ name: "Scratch Org Pool Cleaner - Auto Scheduled"
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: "0 1 * * *"
+#  schedule:
+#    - cron: "0 1 * * *"
 
 jobs:
   clean-pool-dev:
