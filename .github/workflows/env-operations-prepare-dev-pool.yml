@@ -8,8 +8,8 @@ on:
         description: "Branch from where the pools should be created"
         required: false
         default: "master"
-  schedule:
-    - cron: "45 2 * * *"
+#  schedule:
+#    - cron: "45 2 * * *"
 
 jobs:
   pool:
